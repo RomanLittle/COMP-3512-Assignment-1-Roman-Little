@@ -1,0 +1,46 @@
+<?php
+    require_once 'includes\config.inc.php';
+    require_once 'includes\db-classes.inc.php';
+    try { 
+        $conn = DatabaseHelper::createConnection(array(DBCONNSTRING, DBUSER, DBPASS)); 
+        $companyGateway = new CompaniesDB($conn); 
+        $company = $companyGateway->getAll(); 
+        print_r($company);
+    }catch(Exception $e){
+        die( $e->getMessage() ); 
+    }
+    
+?>
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>Assignment 1 company page</title>
+    <link rel="stylesheet" href="css/main-css-include.css">
+    
+</head>
+
+<body >
+    <header>
+        <nav id="topbar">
+            <div id = "header-box">
+            <h1>Portfolio Project</h1>
+            
+            <div id="button-box">
+                <button class = "buttons" >Home </button>
+                <button class = "buttons" >About </button>
+                <button class = "buttons" >APIs </button>
+            </div>
+                
+            
+            </div>
+        </nav>
+    </header>
+    <main class = "container">
+        <div class = "grid-container">
+            <div id = "middle-box">
+                test
+            </div>
+            
+        </div>
+    </main>
+</body>
