@@ -36,7 +36,7 @@
                 In addition to university, I am a member of the Suzirya Ukrainian Dance Society
             </div>
             <div id = "text3">
-                Github Link: I need to add a github link to this page :|
+                Github Link: <a href = "https://github.com/RomanLittle/COMP-3512-Assignment-1-Roman-Little.git"> https://github.com/RomanLittle/COMP-3512-Assignment-1-Roman-Little.git </a>
             </div>
             </div>
         </div>
